@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
+from .settings import TOKEN
 
-TOKEN = '1703569026:AAGLRyIH8ceSPd0beT3jfN4PT_rqZ4ML2sA'
 bot = telebot.TeleBot(TOKEN)
 
 
@@ -70,6 +70,7 @@ def final(message):
     keyboard.add(key_no)
     question = 'Тебе ' + str(age) + ' лет, тебя зовут ' + name + ' ' \
                + surname + '?'
+
     bot.send_message(message.from_user.id, text=question,
                      reply_markup=keyboard)
 
@@ -91,6 +92,3 @@ bot.polling(none_stop=True, interval=0)
 #     elif anime_check(message.text):
 #         bot.send_message(message.from_user.id,
 #                          'chel')
-
-
-
