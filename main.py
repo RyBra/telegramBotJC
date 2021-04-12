@@ -1,19 +1,12 @@
 import telebot
 from telebot import types
+from .settings import TOKEN
 
-TOKEN = '1703569026:AAGLRyIH8ceSPd0beT3jfN4PT_rqZ4ML2sA'
 bot = telebot.TeleBot(TOKEN)
 
 
 def anime_check(message):
     return {'anime', 'аниме'} & set(message.lower().split())
-    # message = message.lower()
-    # splited_message = message.split(' ')
-    #
-    # for msg in splited_message:
-    #     if msg == "аниме" or msg == "anime":
-    #         return True
-    # return False
 
 
 name = ''

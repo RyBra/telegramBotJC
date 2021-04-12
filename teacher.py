@@ -1,2 +1,3 @@
-print("I AM NIKOLAY")dsaasdasd
+print("I AM NIKOLAY")
+
 
