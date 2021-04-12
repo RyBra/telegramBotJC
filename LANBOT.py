@@ -59,6 +59,7 @@ def final(message):
     question = "Тебе " + str(age) + " лет, тебя зовут " + name + " " + surname + "?"
     bot.send_message(message.from_user.id, text = question, reply_markup = keyboard)
 
+
 #def get_text_messages(message):
     #print(message)
     #if message.text.lower() == "привет":
